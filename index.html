@@ -7,22 +7,24 @@
   <link rel="stylesheet" href="css/basic.css">
 </head>
 <body>
-  <img src="img/aws.webp" alt="aws">
+  <div class="navigation">
+  <img src="img/capture.png" alt="aws logo">
+  <h1 class="comp_name">AWS Philippine Distribution</h1>
   <ul class="nav_main">
-    
+    <!--these may be redundant-->
     <li><a href="XX">ABOUT US</a></li>
     <li><a href="XX">PRODUCTS</a></li>
-    <li><a href="XX">PROJECTS</a></li>
+    <li><a href="XX">PROJECTS</a></li> 
     <li><a href="XX">CONTACT US</a></li>
   </ul>
-
+  </div>
   <div id="container">
   	<form class="form-contact">
             
-            <h1>Tells us about your self</h1>
+            <h2>Tells us about your self</h2>
             <input type="text" id="name" placeholder="Name">
             <input type="email" id="email" placeholder="email@example.com">
-            <h1>Did you have a questions about a specific product?</h1>
+            <h2>Did you have a questions about a specific product?</h2>
             <div class=check-items>
               <input type="checkbox" id="Cabling" name="Cabling"><label class="cxlbl" for="Cabling">Cabling</label><br>
               <input type="checkbox" id="Aux" name="Aux"><label class="cxlbl" for="Aux">ELV Auxiliary Systems</label><br>
@@ -30,7 +32,7 @@
               <input type="checkbox" id="GreenPrd" name="GreenPrd"><label class="cxlbl" for="GreenPrd">Green Products</label><br>
               <input type="checkbox" id="NetworkDev" name="NetworkDev"><label class="cxlbl" for="NetworkDev">Network Devices</label><br>
             </div>
-            <h1>How can we help you?</h1>
+            <h2>How can we help you?</h2>
             <textarea id="msg" rows="7"></textarea>
             
             <input class="btn" type="submit" value="Submit">

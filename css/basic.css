@@ -1,10 +1,28 @@
 /*base styles*/
-
+*{
+    box-sizing: border-box;
+}
 /*NAVIGATION*/
 img{
     display:block;
     margin:auto;
 }
+
+/*have a fixed logo that stays on top*/
+/*.logo{
+    position:fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav_main{
+    position: relative;
+}
+
+.content{
+    position: absolute;
+    top:150px;
+}*/
 
 ul{
     list-style-type: none;
@@ -15,7 +33,7 @@ ul{
     overflow:hidden;
 }
 
-li a{
+.comp_name, li a{
     width: 100%;
     display: block;
     text-align: center;
@@ -29,9 +47,10 @@ li{
     border-color: red;
 }
 
-
 li a:hover{
-    background-color: navy;
+    color: navy;
+    font-style: bold;
+    font-size: 1.25rem;
 }
 
 /*BODY OF THE PAGE*/
@@ -41,6 +60,50 @@ body {
     margin:0;
     /*text-align: center;*/
     text-decoration: gray;
+}
+
+/*ABOUT US PAGE*/
+.content_img{
+    opacity:0.5;
+    max-height: auto;
+    max-width:100%;
+    padding-top: 20px;
+    /*min-height: 500px;
+    min-width:500px;*/
+}
+
+.ab_container{
+    position: relative;
+    min-width: 470px;
+}
+
+.about_text{
+    position:absolute;
+    top: 8px;
+    left: 16px;
+}
+
+.about_h {
+    text-align:center;
+}
+
+/*PROJECTS PAGE*/
+.prj_container{
+    position: relative;
+    /*min-width: 470px;*/
+    padding:10px;
+}
+
+
+.project_text {
+    position: relative;
+    right: 10;
+    bottom: 0;
+    padding: 5px 15px;
+    background-color: grey;
+    color: white;
+    width: 100%;
+    margin: auto;
 }
 
 /*CONTACT FORM*/
@@ -63,9 +126,9 @@ body {
     font-size:1.1rem;
 }
 
-h1{
+h2{
     display:block;
-    font-size:1.1rem;
+    /*font-size:1.1rem;*/
 }
 
 input:not([type="checkbox"]){
@@ -75,19 +138,22 @@ input:not([type="checkbox"]){
     font-size:1.1rem;
     border-radius: 10px;
     margin-bottom:8px;
+    color: white;
 }
 
 textarea{
     width:100%;
     font-size:1.1rem;
-    background-color: lightblue;
+    background-color:transparent;
     border-radius: 10px;
 }
-
+/*****/
 /*FOR LARGER SCREENS*/
+/*fixed position nav element*/
+/******/
 @media (min-width:769px) {
 
-input:not([type="textarea"]){
+/*input:not([type="textarea"]){
     width:40%;
 }
 
@@ -121,5 +187,5 @@ span{
     float:center;
 }
 
-}
+}*/
 
