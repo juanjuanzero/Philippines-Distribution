@@ -1,28 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Contact Us</title>
+	<title>AWS Philippine Distribution</title>
   <link href="https://fonts.googleapis.com/css?family=Khula" rel="stylesheet">
   <!--<link rel="stylesheet" href="css/base-style.css">-->
   <link rel="stylesheet" href="css/basic.css">
 </head>
 <body>
-  <img src="img/aws.webp" alt="aws">
-  <ul class="nav_main">
-    
-    <li><a href="XX">ABOUT US</a></li>
-    <li><a href="XX">PRODUCTS</a></li>
-    <li><a href="XX">PROJECTS</a></li>
-    <li><a href="XX">CONTACT US</a></li>
-  </ul>
+  <!--navigation-->
+  <div class="navigation">
+  <div class="logo">
+    <div ><a href="index.html"><img class="logo_img" src="img/capture.png" alt="aws logo"></a></div>
+    <h3 class="comp_name">AWS Philippine Distribution</h3>
+  </div>
+    <ul class="nav_main">
+        <li><a href="services.html">Our Services</a></li>
+        <li><a href="projects.html">Our Projects</a></li>
+        <li><a href="#contact">Connect With Us</a></li>
+    </ul>
+  </div>
+<!--/navigation-->
 
-  <div id="container">
+<!--Introductory Content-->
+<div class="container">
+    
+    <div id="why" class="about">
+        
+        <div class="about_text"><h2 class="about_h">Who we are</h2><p class="ab_container">AWS Distribution Phils., Corp. was established in March 1997, when the need for structured cabling was at its peak. Due to the continuous rise of business opportunities nationwide, AWS Distribution Phils., Corp. then extended its operations in Visayas and Mindanao. Over the years, we have expanded not only our reach but also our efforts to be able to provide a wide array of products to cater to your Telecommunications, Power, Data, Voice & Security needs. In our effort to grow with the market, we recently ventured into distributing GREEN Products as to heed not only our role in providing our clientele topmost products, but in contributing ourshare in protecting the environment as well</p></div>
+
+<!--/content-->
+        <div class="about_text">
+          <h2 class="about_h">Linking the Nation Together</h2>
+            <p class="ab_container">
+              AWS Distribution Phils., Corp. was established in March 1997, when the need for structured cabling was at its peak. Due to the continuous rise of business opportunities nationwide, AWS Distribution Phils., Corp. then extended its operations in Visayas and Mindanao.
+            </p>
+            <a class="intro_btn" href="services.html">Learn More About Our Services</a>
+        </div>
+    </div>
+<!--/content-->
+<!--content-->
+    <h2 class="about_h">Working Together</h2>
+    <div id="what" class="intro_prj_container projects">
+        <!--<img class="content_img"src="img/blueprint.jpg" alt="about image">-->
+            <p class="ab_container">
+              AWS Distribution Phils., Corp. was established in March 1997, when the need for structured cabling was at its peak. Due to the continuous rise of business opportunities nationwide, AWS Distribution Phils., Corp. then extended its operations in Visayas and Mindanao.
+            </p>
+            <a class="intro_btn" href="projects.html">Learn More About Our Projects</a>
+    </div>
+</div>
+<!--/content-->
+<!--/End Introductory Content-->
+
+<!--Contact Page-->
+  <div id="contact" class="container">
   	<form class="form-contact">
             
-            <h1>Tells us about your self</h1>
-            <input type="text" id="name" placeholder="Name">
-            <input type="email" id="email" placeholder="email@example.com">
-            <h1>Did you have a questions about a specific product?</h1>
+            <h2 class="about_h">Tells us about your self</h2>
+            <input class="inpt_form" type="text" id="name" placeholder="Name">
+            <input class="inpt_form" type="email" id="email" placeholder="email@example.com">
+            <h3>Did you have a questions about a specific product?</h3>
             <div class=check-items>
               <input type="checkbox" id="Cabling" name="Cabling"><label class="cxlbl" for="Cabling">Cabling</label><br>
               <input type="checkbox" id="Aux" name="Aux"><label class="cxlbl" for="Aux">ELV Auxiliary Systems</label><br>
@@ -30,13 +66,14 @@
               <input type="checkbox" id="GreenPrd" name="GreenPrd"><label class="cxlbl" for="GreenPrd">Green Products</label><br>
               <input type="checkbox" id="NetworkDev" name="NetworkDev"><label class="cxlbl" for="NetworkDev">Network Devices</label><br>
             </div>
-            <h1>How can we help you?</h1>
+            <h3>How can we help you?</h3>
             <textarea id="msg" rows="7"></textarea>
             
-            <input class="btn" type="submit" value="Submit">
-            <input class="btn" type="reset" value="Reset"> 
+            <input class="inpt_form" type="submit" value="Submit">
+            <input class="inpt_form" type="reset" value="Reset"> 
             
 		</form>
 	</div>
+  <!--/End Contact Page-->
 </body>
 </html>
