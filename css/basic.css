@@ -3,9 +3,20 @@
     box-sizing: border-box;
 }
 /*NAVIGATION*/
-img{
-    display:block;
-    margin:auto;
+.logo_img {
+    display: block;
+    margin: auto;
+}
+
+.main_title{
+    display: block;
+    text-align: center;
+    background: lightslategray;
+}
+
+.selected{
+    color: navy;
+    font-style: italic;
 }
 
 /*have a fixed logo that stays on top*/
@@ -40,12 +51,13 @@ ul{
     color: gray;
     text-decoration: none;
     padding: 5px 0 5px;
+    font-size: 1.2em;
 }
 
-li{
+/*li{
     border-radius: 10px;
     border-color: red;
-}
+}*/
 
 li a:hover{
     color: navy;
@@ -62,55 +74,89 @@ body {
     text-decoration: gray;
 }
 
-/*ABOUT US PAGE*/
-.content_img{
-    opacity:0.5;
-    max-height: auto;
-    max-width:100%;
-    padding-top: 20px;
-    /*min-height: 500px;
-    min-width:500px;*/
+/*INTRO PAGE*/
+
+
+.intro_prj_container{
+    /*position: relative;*/
+    /*min-width: 470px;*/
+    /*opacity: 0.7;*/
+    /*padding: 10px;*/
 }
 
 .ab_container{
-    position: relative;
-    min-width: 470px;
+    background-color: black;
+    opacity: 0.75;
+    padding: 10px;
+    color: white;
 }
 
 .about_text{
-    position:absolute;
-    top: 8px;
-    left: 16px;
+    display: block;
+    width: 100%;
+    color: white;
+    padding: 10px;
+}
+
+.about{
+    background: url("../img/meet2.jpeg") no-repeat fixed right bottom;
+    background-size: cover;
 }
 
 .about_h {
     text-align:center;
+    background-color: #1861AD;
+    color: white;
+    border-radius: 5;
 }
 
 /*PROJECTS PAGE*/
+.projects{
+    background: url("../img/blueprint.jpg") no-repeat fixed right bottom;
+    background-size: cover;
+    padding: 10px;
+}
+
 .prj_container{
     position: relative;
     /*min-width: 470px;*/
-    padding:10px;
+    padding:20px;
 }
 
+.proj_btn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    padding: 5px;
+    width: 50%;
+    text-align: center;
+    opacity: 1;
+}
 
+.proj_content{
+    border-radius: 10px;
+    background-color: black;
+    padding-bottom: 10px;
+    /*opacity:0.75;*/
+}
+/*
 .project_text {
-    position: relative;
-    right: 10;
-    bottom: 0;
-    padding: 5px 15px;
-    background-color: grey;
-    color: white;
-    width: 100%;
+    background-color: black;
+    opacity:0.75;
+}*/
+
+.content_img{
+    display: block;
     margin: auto;
+    width: 100%;
 }
 
 /*CONTACT FORM*/
-#container{
+.container{
     margin:auto;
     max-width: 95%;
-    padding:0 60px;
+    padding:0 10px;
 }
 
 .check-items input{
@@ -121,7 +167,7 @@ body {
     width: 12px;
 }
 
-.check-items label, h1{
+.check-items label{
     display:inline;
     font-size:1.1rem;
 }
@@ -131,14 +177,34 @@ h2{
     /*font-size:1.1rem;*/
 }
 
-input:not([type="checkbox"]){
-    /*display: block;*/
-    width:100%;
-    background-color: transparent;
+.intro_btn{
+    display: block;
+    padding: 5px;
+    margin: auto;
+    width: 30%;
+    text-align: center;
+    text-decoration: none;
+    opacity: .5;
+}
+
+.intro_btn:hover{
+    opacity: 1;
+    background-color: #1861AD;
+    color: white;
+}
+
+input:not([type="checkbox"]), .intro_btn{
+    display: block;
+    color: #1861AD;
+    background-color: white;
     font-size:1.1rem;
     border-radius: 10px;
     margin-bottom:8px;
-    color: white;
+}
+
+.inpt_form{
+    padding: 10px;
+    width: 100%;
 }
 
 textarea{
@@ -153,39 +219,16 @@ textarea{
 /******/
 @media (min-width:769px) {
 
-/*input:not([type="textarea"]){
-    width:40%;
+.container{
+    max-width:1000px;
 }
 
-li{
-    list-style: none;
-    display: inline;
-    padding: 0 10px;
-    float:right;
-}
-
-.check-items{
-    width:50%;
-}
-
-li a {
-    display: block;
-    padding: 10px;
-    text-align:center;
-}
-
-li a:hover{
-    background-color: black;
-    font-style: bold;
-}
-
-img{
+ul li {
     display: inline-block;
+    padding: 20px;
 }
 
-span{
-    float:center;
+ul {
+    text-align: center;
 }
-
-}*/
 
