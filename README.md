@@ -14,3 +14,4 @@ Code Louisville Requirements:
 Custom Javascript: was done through the learn more buttons that inserts text into div elements. the js also changes the buttons value to/from "learn more" to "hide"
 Custom CSS: i did not use any frameworks to build these pages. all of my css is custom. 
 Responsiveness: The elements resize from small to large viewports. the nav links also change from stacked to inline
+Readme file: this file
