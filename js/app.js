@@ -1,14 +1,9 @@
-// load in some project content when an image is clicked
-// project images are laid out in the original html
-// click on a button to load the project properties into the page
+// this place would be updated every now and then for projects the project would want to highlight.
 
-// this place would be updated every now and then for projects we would want to highlight.
-
-// select where we would be adding the element and the button
-// const ProjectDesc = document.querySelector(".projectdesc");
+// Select the buttons using jquery
 const PrjDescButton1 = document.querySelector(".proj_btn1");
 const PrjDescButton2 = document.querySelector(".proj_btn2");
-// const ProjectHide = document.querySelector(".projhide");
+
 // click a button and add html to the document while replacing the button with the text like in articles
 
 $(PrjDescButton1).click(function(){
@@ -38,8 +33,3 @@ $(PrjDescButton2).click(function(){
         PrjDescButton2.value = "Hide";
     }
 });
-
-// click a button and replace the projectdesc div with content
-// change the value to "hide"" and class name of the button (we are doing this so it gets selected in the first part)
-
-// add hide button
